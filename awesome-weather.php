@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.0
+Version: 1.0.1
 
 
 FILTERS AVAILABLE:
@@ -87,6 +87,8 @@ function awesome_weather_logic( $atts )
 			set_transient( $city_id_transient_name, $city_id, 2629743); // CACHE FOR A MONTH
 		}		
 	}
+	
+	echo $city_id;
 	
 	// NO CITY ID
 	if( !$city_id ) { return awesome_weather_error( __('City could not be found', 'awesome-weather') ); }
