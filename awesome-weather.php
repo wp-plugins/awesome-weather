@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.0
+Version: 1.0.1
 
 
 FILTERS AVAILABLE:
@@ -88,6 +88,8 @@ function awesome_weather_logic( $atts )
 		}		
 	}
 	
+	echo $city_id;
+	
 	// NO CITY ID
 	if( !$city_id ) { return awesome_weather_error( __('City could not be found', 'awesome-weather') ); }
 	
@@ -99,13 +101,13 @@ function awesome_weather_logic( $atts )
 	
 	if(!isset($weather_data['today']))
 	{
-		$weather_data['today'] 		= json_decode(file_get_contents("http://api.openweathermap.org/data/2.3/weather/city/" . $city_id . "?units=" . $units) );
+		$weather_data['today'] 		= json_decode(file_get_contents("http://api.openweathermap.org/data/2.1/weather/city/" . $city_id . "?units=" . $units) );
 		set_transient( $weather_transient_name, $weather_data, apply_filters( 'awesome_weather_cache', 3600 ) ); // CACHE FOR AN HOUR
 	}
 	
 	if(!isset($weather_data['forecast']) AND $days_to_show != "hide")
 	{
-		$weather_data['forecast'] 	= json_decode(file_get_contents("http://api.openweathermap.org/data/2.3/forecast/city/" . $city_id . "?mode=daily_compact&units=" . $units) );
+		$weather_data['forecast'] 	= json_decode(file_get_contents("http://api.openweathermap.org/data/2.1/forecast/city/" . $city_id . "?mode=daily_compact&units=" . $units) );
 		set_transient( $weather_transient_name, $weather_data, apply_filters( 'awesome_weather_cache', 3600 ) ); // CACHE FOR AN HOUR
 	}
 

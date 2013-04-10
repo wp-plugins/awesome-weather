@@ -46,5 +46,8 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Changelog ==
 
+= 1.0.1 =
+* Changed API endpoints
+
 = 1.0 =
 * Initial load of the plugin.
