@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: halgatewood
 Donate link: http://halgatewood.com/awesome-weather/
-Tags: widgets, sidebar, shortcode
+Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global
 Requires at least: 3.5
 Tested up to: 3.6
 Stable tag: trunk
@@ -26,7 +26,7 @@ Settings:
 * Forecast Days: How many days to show in the forecast bar
 * Hide stats: Hide the text stats like humidity, wind, high and lows, etc.
 
-All weather data is provided by openweathermap.org and is cached for one hour.
+All weather data is provided by http://openweathermap.org and is cached for one hour.
 
 
 == Installation ==
