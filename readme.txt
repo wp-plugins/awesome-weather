@@ -14,7 +14,7 @@ Finally beautiful weather widgets for your site.
 
 This plugin allows you to easily add super clean weather widgets to your site. The design is based off the site: http://weatherrr.net/ and the widget changes colors based on the current temp.
 
-Use the built in widget or include somewhere else with the following shortcode: (all settings shown)
+Use the built in widget or add it somewhere else with this shortcode: (all settings shown)
 
 `[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days=2 hide_stats=true]`
 
