@@ -87,8 +87,7 @@ function awesome_weather_logic( $atts )
 			set_transient( $city_id_transient_name, $city_id, 2629743); // CACHE FOR A MONTH
 		}		
 	}
-	
-	echo $city_id;
+
 	
 	// NO CITY ID
 	if( !$city_id ) { return awesome_weather_error( __('City could not be found', 'awesome-weather') ); }
