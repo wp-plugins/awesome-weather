@@ -44,6 +44,11 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 3. Micro no features
 4. Widget Settings
 
+== Upgrade Notice ==
+
+= 1.0.1 =
+Changed API endpoints. Might not find weather without update.
+
 == Changelog ==
 
 = 1.0.1 =
