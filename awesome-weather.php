@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.0.1
+Version: 1.0.2
 
 
 FILTERS AVAILABLE:

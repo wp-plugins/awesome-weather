@@ -51,6 +51,9 @@ Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
 
+= 1.0.2 =
+* Removed debugging code, sorry!
+
 = 1.0.1 =
 * Changed API endpoints
 
