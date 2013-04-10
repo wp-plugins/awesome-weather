@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: halgatewood
 Donate link: http://halgatewood.com/awesome-weather/
-Tags: widgets, sidebar, shortcode
+Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global
 Requires at least: 3.5
 Tested up to: 3.6
 Stable tag: trunk
@@ -14,19 +14,20 @@ Finally beautiful weather widgets for your site.
 
 This plugin allows you to easily add super clean weather widgets to your site. The design is based off the site: http://weatherrr.net/ and the widget changes colors based on the current temp.
 
-Use the built in widget or include somewhere else with the following shortcode: (all settings shown)
+Use the built in widget or add it somewhere else with this shortcode: (all settings shown)
 
 `[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days=2 hide_stats=true]`
 
 Settings:
-* Location: Enter like Montreal, CA or just Montreal. You may need to try different variations to get the right city.
-* Units: F (default) or C
-* Size: wide (default) or tall
-* Override Title: Change the title in the header bar to whatever, sometimes it pulls weather from a close city.
-* Forecast Days: How many days to show in the forecast bar
-* Hide stats: Hide the text stats like humidity, wind, high and lows, etc.
 
-All weather data is provided by openweathermap.org and is cached for one hour.
+*   Location: Enter like Montreal, CA or just Montreal. You may need to try different variations to get the right city
+*   Units: F (default) or C
+*   Size: wide (default) or tall
+*   Override Title: Change the title in the header bar to whatever, sometimes it pulls weather from a close city
+*   Forecast Days: How many days to show in the forecast bar
+*   Hide stats: Hide the text stats like humidity, wind, high and lows, etc
+
+All weather data is provided by http://openweathermap.org and is cached for one hour.
 
 
 == Installation ==
