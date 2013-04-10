@@ -46,6 +46,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.0.2 =
+Removed debugging code, sorry!
+
 = 1.0.1 =
 Changed API endpoints. Might not find weather without update.
 
