@@ -46,6 +46,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.1 =
+Errors are now commented out. Look in the source to see what the problem is.
+
 = 1.0.2 =
 Removed debugging code, sorry!
 
@@ -53,6 +56,10 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.1 =
+* Errors are now commented out. Look in the source to see what the problem is.
+* Ability to add link to openweathermap for extended forecast
 
 = 1.0.2 =
 * Removed debugging code, sorry!

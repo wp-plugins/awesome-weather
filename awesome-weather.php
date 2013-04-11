@@ -5,13 +5,14 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.0.2
+Version: 1.1
 
 
 FILTERS AVAILABLE:
-awesome_weather_cache 		= How many seconds to cache weather: default 3600 (one hour).
-awesome_weather_error 		= Error message if weather is not found.
-awesome_weather_sizes 		= array of sizes for widget
+awesome_weather_cache 						= How many seconds to cache weather: default 3600 (one hour).
+awesome_weather_error 						= Error message if weather is not found.
+awesome_weather_sizes 						= array of sizes for widget
+awesome_weather_extended_forecast_text 		= Change text of footer link
 
 
 SHORTCODE USAGE
@@ -55,6 +56,7 @@ function awesome_weather_logic( $atts )
 	$override_title 	= isset($atts['override_title']) ? $atts['override_title'] : false;
 	$days_to_show 		= isset($atts['forecast_days']) ? $atts['forecast_days'] : 5;
 	$show_stats 		= (isset($atts['hide_stats']) AND $atts['hide_stats'] == 1) ? 0 : 1;
+	$show_link 			= (isset($atts['show_link']) AND $atts['show_link'] == 1) ? 1 : 0;
 
 	if( !$location ) { return awesome_weather_error(); }
 	
@@ -70,24 +72,30 @@ function awesome_weather_logic( $atts )
 		$city_id = get_transient( $city_id_transient_name );
 	}
 	
-	
 	// NOT AN ElSE JUST IN CASE THE TRANSIENT 
 	// HAS AN EMPTY CITY_ID FOR WHATEVER REASON
 	if(!$city_id)
 	{
-		$data = json_decode( file_get_contents( "http://api.openweathermap.org/data/2.1/find/name?q=" . $city_name_slug ) );
+		$city_ping = "http://api.openweathermap.org/data/2.1/find/name?q=" . $city_name_slug;
+		$data = json_decode( file_get_contents( $city_ping ) );
 	
-		if( !$data ) { return awesome_weather_error( __('City could not be found', 'awesome-weather') ); }
+		if( isset($data->message) AND $data->message == "not found" )
+		{ 
+			return awesome_weather_error( __('City could not be found:' . $city_ping , 'awesome-weather') ); 
+		}
 	
-		$city = $data->list[0];
-		$city_id = $city->id;
+		if($data AND $data->list)
+		{
+		
+			$city = $data->list[0];
+			$city_id = $city->id;
+		}
 		
 		if($city_id)
 		{
 			set_transient( $city_id_transient_name, $city_id, 2629743); // CACHE FOR A MONTH
 		}		
 	}
-
 	
 	// NO CITY ID
 	if( !$city_id ) { return awesome_weather_error( __('City could not be found', 'awesome-weather') ); }
@@ -141,8 +149,6 @@ function awesome_weather_logic( $atts )
 		if($today_temp >= 26 AND $today_temp < 32) $bg_color = "temp6";
 		if($today_temp >= 32) $bg_color = "temp7";
 	}
-	
-	
 	
 	
 	// DATA
@@ -225,11 +231,18 @@ function awesome_weather_logic( $atts )
 		}
 		$rtn .= " </div> <!-- /.awesome-weather-forecast -->";
 	}
+	
+	if($show_link AND $city_id)
+	{
+		$show_link_text = apply_filters('awesome_weather_extended_forecast_text' , "extended forecast" );
 
+		$rtn .= "<div class=\"awesome-weather-more-weather-link\">";
+		$rtn .= "<a href=\"http://openweathermap.org/city/{$city_id}\" target=\"_blank\">{$show_link_text}</a>";		
+		$rtn .= "</div> <!-- /.awesome-weather-more-weather-link -->";
+	}
 	
 	$rtn .= "</div> <!-- /.awesome-weather-wrap -->";
 	return $rtn;
-
 }
 
 
@@ -237,7 +250,7 @@ function awesome_weather_logic( $atts )
 function awesome_weather_error( $msg = false )
 {
 	if(!$msg) $msg = __('No weather information available', 'awesome-weather');
-	return apply_filters( 'awesome_weather_error', "<p class='error'>" . $msg . "</p>" );
+	return apply_filters( 'awesome_weather_error', "<!-- AWESOME WEATHER ERROR: " . $msg . " -->" );
 }
 
 
@@ -257,9 +270,10 @@ class AwesomeWeatherWidget extends WP_Widget
         $size 				= isset($instance['size']) ? $instance['size'] : false;
         $forecast_days 		= isset($instance['forecast_days']) ? $instance['forecast_days'] : false;
         $hide_stats 		= (isset($instance['hide_stats']) AND $instance['hide_stats'] == 1) ? 1 : 0;
+        $show_link 			= (isset($instance['show_link']) AND $instance['show_link'] == 1) ? 1 : 0;
 
 		echo $before_widget;
-		echo awesome_weather_logic( array( 'location' => $location, 'override_title' => $override_title, 'size' => $size, 'units' => $units, 'forecast_days' => $forecast_days, 'hide_stats' => $hide_stats));
+		echo awesome_weather_logic( array( 'location' => $location, 'override_title' => $override_title, 'size' => $size, 'units' => $units, 'forecast_days' => $forecast_days, 'hide_stats' => $hide_stats, 'show_link' => $show_link));
 		echo $after_widget;
     }
  
@@ -272,6 +286,7 @@ class AwesomeWeatherWidget extends WP_Widget
 		$instance['size'] 				= strip_tags($new_instance['size']);
 		$instance['forecast_days'] 		= strip_tags($new_instance['forecast_days']);
 		$instance['hide_stats'] 		= strip_tags($new_instance['hide_stats']);
+		$instance['show_link'] 			= strip_tags($new_instance['show_link']);
         return $instance;
     }
  
@@ -285,6 +300,7 @@ class AwesomeWeatherWidget extends WP_Widget
         $units 				= isset($instance['units']) ? esc_attr($instance['units']) : "imperial";
         $forecast_days 		= isset($instance['forecast_days']) ? esc_attr($instance['forecast_days']) : 5;
         $hide_stats 		= (isset($instance['hide_stats']) AND $instance['hide_stats'] == 1) ? 1 : 0;
+        $show_link 			= (isset($instance['show_link']) AND $instance['show_link'] == 1) ? 1 : 0;
         
         ?>
         <p>
@@ -328,6 +344,11 @@ class AwesomeWeatherWidget extends WP_Widget
           <label for="<?php echo $this->get_field_id('hide_stats'); ?>"><?php _e('Hide Stats:'); ?></label>  &nbsp;
           <input id="<?php echo $this->get_field_id('hide_stats'); ?>" name="<?php echo $this->get_field_name('hide_stats'); ?>" type="checkbox" value="1" <?php if($hide_stats) echo ' checked="checked"'; ?> />
         </p>
+		
+        <p>
+          <label for="<?php echo $this->get_field_id('show_link'); ?>"><?php _e('Link to OpenWeatherMap:'); ?></label>  &nbsp;
+          <input id="<?php echo $this->get_field_id('show_link'); ?>" name="<?php echo $this->get_field_name('show_link'); ?>" type="checkbox" value="1" <?php if($show_link) echo ' checked="checked"'; ?> />
+        </p>  
 		
         <?php 
     }
