@@ -46,6 +46,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.1.1 =
+Google Font URL changed or I messed it up, probably me.
+
 = 1.1 =
 Errors are now commented out. Look in the source to see what the problem is.
 
