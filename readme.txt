@@ -16,7 +16,7 @@ This plugin allows you to easily add super clean weather widgets to your site. T
 
 Use the built in widget or add it somewhere else with this shortcode: (all settings shown)
 
-`[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days=2 hide_stats=true]`
+`[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days=2 hide_stats=true background=http://urltoanimage.jpg]`
 
 Settings:
 
@@ -26,6 +26,7 @@ Settings:
 *   Override Title: Change the title in the header bar to whatever, sometimes it pulls weather from a close city
 *   Forecast Days: How many days to show in the forecast bar
 *   Hide stats: Hide the text stats like humidity, wind, high and lows, etc
+*   Background: URL to an image that will be used as the background of the entire widget
 
 All weather data is provided by http://openweathermap.org and is cached for one hour.
 
@@ -43,8 +44,12 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 2. Basic tall layout
 3. Micro no features
 4. Widget Settings
+5. Background Image Option (1.2)
 
 == Upgrade Notice ==
+
+= 1.2 =
+Background Image Option
 
 = 1.1.1 =
 Google Font URL changed or I messed it up, probably me.
@@ -59,6 +64,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.2 =
+* Background Image Option
 
 = 1.1 =
 * Errors are now commented out. Look in the source to see what the problem is.

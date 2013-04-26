@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.1.1
+Version: 1.2
 
 
 FILTERS AVAILABLE:
@@ -57,6 +57,7 @@ function awesome_weather_logic( $atts )
 	$days_to_show 		= isset($atts['forecast_days']) ? $atts['forecast_days'] : 5;
 	$show_stats 		= (isset($atts['hide_stats']) AND $atts['hide_stats'] == 1) ? 0 : 1;
 	$show_link 			= (isset($atts['show_link']) AND $atts['show_link'] == 1) ? 1 : 0;
+	$background			= isset($atts['background']) ? $atts['background'] : false;
 
 	if( !$location ) { return awesome_weather_error(); }
 	
@@ -180,12 +181,22 @@ function awesome_weather_logic( $atts )
 	
 	$show_stats_class = ($show_stats) ? "awe_with_stats" : "awe_without_stats";
 	
+	if($background) $bg_color = "darken";
 	
 	// DISPLAY WIDGET	
 	$rtn .= "
 	
 		<div id=\"awesome-weather-{$city_name_slug}\" class=\"awesome-weather-wrap awecf {$bg_color} {$show_stats_class} awe_{$size}\">
-	
+	";
+
+
+	if($background) 
+	{ 
+		$rtn .= "<div class=\"awesome-weather-cover\" style='background: url($background) no-repeat;'>";
+		$rtn .= "<div class=\"awesome-weather-darken\">";
+	}
+
+	$rtn .= "
 			<div class=\"awesome-weather-header\">{$header_title}</div>
 			
 			<div class=\"awesome-weather-current-temp\">
@@ -240,6 +251,13 @@ function awesome_weather_logic( $atts )
 		$rtn .= "<a href=\"http://openweathermap.org/city/{$city_id}\" target=\"_blank\">{$show_link_text}</a>";		
 		$rtn .= "</div> <!-- /.awesome-weather-more-weather-link -->";
 	}
+	
+	if($background) 
+	{ 
+		$rtn .= "</div> <!-- /.awesome-weather-cover -->";
+		$rtn .= "</div> <!-- /.awesome-weather-darken -->";
+	}
+	
 	
 	$rtn .= "</div> <!-- /.awesome-weather-wrap -->";
 	return $rtn;
