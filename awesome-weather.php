@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.2
+Version: 1.2.1
 
 
 FILTERS AVAILABLE:
@@ -289,9 +289,10 @@ class AwesomeWeatherWidget extends WP_Widget
         $forecast_days 		= isset($instance['forecast_days']) ? $instance['forecast_days'] : false;
         $hide_stats 		= (isset($instance['hide_stats']) AND $instance['hide_stats'] == 1) ? 1 : 0;
         $show_link 			= (isset($instance['show_link']) AND $instance['show_link'] == 1) ? 1 : 0;
+        $background			= isset($instance['background']) ? $instance['background'] : false;
 
 		echo $before_widget;
-		echo awesome_weather_logic( array( 'location' => $location, 'override_title' => $override_title, 'size' => $size, 'units' => $units, 'forecast_days' => $forecast_days, 'hide_stats' => $hide_stats, 'show_link' => $show_link));
+		echo awesome_weather_logic( array( 'location' => $location, 'override_title' => $override_title, 'size' => $size, 'units' => $units, 'forecast_days' => $forecast_days, 'hide_stats' => $hide_stats, 'show_link' => $show_link, 'background' => $background ));
 		echo $after_widget;
     }
  
@@ -305,6 +306,7 @@ class AwesomeWeatherWidget extends WP_Widget
 		$instance['forecast_days'] 		= strip_tags($new_instance['forecast_days']);
 		$instance['hide_stats'] 		= strip_tags($new_instance['hide_stats']);
 		$instance['show_link'] 			= strip_tags($new_instance['show_link']);
+		$instance['background'] 		= strip_tags($new_instance['background']);
         return $instance;
     }
  
@@ -319,6 +321,7 @@ class AwesomeWeatherWidget extends WP_Widget
         $forecast_days 		= isset($instance['forecast_days']) ? esc_attr($instance['forecast_days']) : 5;
         $hide_stats 		= (isset($instance['hide_stats']) AND $instance['hide_stats'] == 1) ? 1 : 0;
         $show_link 			= (isset($instance['show_link']) AND $instance['show_link'] == 1) ? 1 : 0;
+        $background			= isset($instance['background']) ? esc_attr($instance['background']) : "";
         
         ?>
         <p>
@@ -357,6 +360,11 @@ class AwesomeWeatherWidget extends WP_Widget
           	<option value="hide"<?php if($forecast_days == 'hide') echo " selected=\"selected\""; ?>>Don't Show</option>
           </select>
 		</p>
+		
+        <p>
+          <label for="<?php echo $this->get_field_id('background'); ?>"><?php _e('Background Image:'); ?></label> 
+          <input class="widefat" id="<?php echo $this->get_field_id('background'); ?>" name="<?php echo $this->get_field_name('background'); ?>" type="text" value="<?php echo $background; ?>" />
+        </p>
 		
         <p>
           <label for="<?php echo $this->get_field_id('hide_stats'); ?>"><?php _e('Hide Stats:'); ?></label>  &nbsp;

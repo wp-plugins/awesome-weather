@@ -65,6 +65,9 @@ Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
 
+= 1.2.1 =
+* Background Image Option in widget
+
 = 1.2 =
 * Background Image Option
 
