@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.2.1
+Version: 1.2.2
 
 
 FILTERS AVAILABLE:
@@ -317,12 +317,11 @@ class AwesomeWeatherWidget extends WP_Widget
         $location 			= isset($instance['location']) ? esc_attr($instance['location']) : "";
         $override_title 	= isset($instance['override_title']) ? esc_attr($instance['override_title']) : "";
         $selected_size 		= isset($instance['size']) ? esc_attr($instance['size']) : "wide";
-        $units 				= isset($instance['units']) ? esc_attr($instance['units']) : "imperial";
+        $units 				= (isset($instance['units']) AND strtoupper($instance['units']) == "C") ? "C" : "F";
         $forecast_days 		= isset($instance['forecast_days']) ? esc_attr($instance['forecast_days']) : 5;
         $hide_stats 		= (isset($instance['hide_stats']) AND $instance['hide_stats'] == 1) ? 1 : 0;
         $show_link 			= (isset($instance['show_link']) AND $instance['show_link'] == 1) ? 1 : 0;
         $background			= isset($instance['background']) ? esc_attr($instance['background']) : "";
-        
         ?>
         <p>
           <label for="<?php echo $this->get_field_id('location'); ?>"><?php _e('Location:'); ?></label> 
@@ -336,8 +335,8 @@ class AwesomeWeatherWidget extends WP_Widget
                 
         <p>
           <label for="<?php echo $this->get_field_id('units'); ?>"><?php _e('Units:'); ?></label>  &nbsp;
-          <input id="<?php echo $this->get_field_id('units'); ?>" name="<?php echo $this->get_field_name('units'); ?>" type="radio" value="imperial" <?php if($units == "imperial") echo ' checked="checked"'; ?> /> F &nbsp; &nbsp;
-          <input id="<?php echo $this->get_field_id('units'); ?>" name="<?php echo $this->get_field_name('units'); ?>" type="radio" value="metric" <?php if($units == "metric") echo ' checked="checked"'; ?> /> C
+          <input id="<?php echo $this->get_field_id('units'); ?>" name="<?php echo $this->get_field_name('units'); ?>" type="radio" value="F" <?php if($units == "F") echo ' checked="checked"'; ?> /> F &nbsp; &nbsp;
+          <input id="<?php echo $this->get_field_id('units'); ?>" name="<?php echo $this->get_field_name('units'); ?>" type="radio" value="C" <?php if($units == "C") echo ' checked="checked"'; ?> /> C
         </p>
         
 		<p>
