@@ -48,6 +48,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.2.3 =
+Removed file_get_contents and replaced with wp_remote_get
+
 = 1.2 =
 Background Image Option
 
