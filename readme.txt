@@ -48,8 +48,11 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.2.4 =
+Forecast now stops showing today.
+
 = 1.2.3 =
-Removed file_get_contents and replaced with wp_remote_get
+Better API Support
 
 = 1.2 =
 Background Image Option
@@ -67,6 +70,12 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.2.4 =
+* Forecast now stops showing today.
+
+= 1.2.3 =
+* remove file_get_contents and used wp_remote_get
 
 = 1.2.1 =
 * Background Image Option in widget

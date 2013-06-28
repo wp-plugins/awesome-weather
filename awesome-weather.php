@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.2.3
+Version: 1.2.4
 
 
 FILTERS AVAILABLE:
@@ -230,7 +230,7 @@ function awesome_weather_logic( $atts )
 		
 		foreach( (array) $forecast->list as $forecast )
 		{
-			if( $dt_today > date('Ymd', $forecast->dt)) continue;
+			if( $dt_today >= date('Ymd', $forecast->dt)) continue;
 			
 			$forecast->temp = (int) $forecast->temp;
 			$day_of_week = date('D', $forecast->dt);
