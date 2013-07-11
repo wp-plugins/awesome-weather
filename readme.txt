@@ -48,6 +48,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.2.5 =
+Widget with custom background CSS issue.
+
 = 1.2.4 =
 Forecast now stops showing today.
 
@@ -70,6 +73,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.2.5 =
+* Widget with custom background CSS issue.
 
 = 1.2.4 =
 * Forecast now stops showing today.

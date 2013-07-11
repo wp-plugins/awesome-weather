@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.2.4
+Version: 1.2.5
 
 
 FILTERS AVAILABLE:
@@ -195,7 +195,7 @@ function awesome_weather_logic( $atts )
 
 	if($background) 
 	{ 
-		$rtn .= "<div class=\"awesome-weather-cover\" style='background: url($background) no-repeat;'>";
+		$rtn .= "<div class=\"awesome-weather-cover\" style='background-image: url($background);'>";
 		$rtn .= "<div class=\"awesome-weather-darken\">";
 	}
 
