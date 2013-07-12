@@ -48,6 +48,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.2.6 =
+Improved error handling with API calls
+
 = 1.2.5 =
 Widget with custom background CSS issue.
 
@@ -73,6 +76,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.2.6 =
+* Improved error handling with API calls
 
 = 1.2.5 =
 * Widget with custom background CSS issue.

@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.2.5
+Version: 1.2.6
 
 
 FILTERS AVAILABLE:
@@ -79,6 +79,13 @@ function awesome_weather_logic( $atts )
 	{
 		$city_ping = "http://api.openweathermap.org/data/2.1/find/name?q=" . $city_name_slug;
 		$city_ping_get = wp_remote_get( $city_ping );
+		
+		if( is_wp_error( $city_ping_get ) ) 
+		{
+			return awesome_weather_error( $city_ping_get->get_error_message()  ); 
+		}
+		
+		
 		$data = json_decode( $city_ping_get['body'] );
 	
 		if( isset($data->message) AND $data->message == "not found" )
@@ -111,6 +118,12 @@ function awesome_weather_logic( $atts )
 	if(!isset($weather_data['today']))
 	{
 		$today_get = wp_remote_get("http://api.openweathermap.org/data/2.1/weather/city/" . $city_id . "?units=" . $units);
+		
+		if( is_wp_error( $today_get ) ) 
+		{
+			return awesome_weather_error( $today_get->get_error_message()  ); 
+		}
+
 		$weather_data['today'] 		= json_decode( $today_get['body'] );
 		set_transient( $weather_transient_name, $weather_data, apply_filters( 'awesome_weather_cache', 3600 ) ); // CACHE FOR AN HOUR
 	}
@@ -118,6 +131,12 @@ function awesome_weather_logic( $atts )
 	if(!isset($weather_data['forecast']) AND $days_to_show != "hide")
 	{
 		$forecast_get = wp_remote_get("http://api.openweathermap.org/data/2.1/forecast/city/" . $city_id . "?mode=daily_compact&units=" . $units);
+		
+		if( is_wp_error( $forecast_get ) ) 
+		{
+			return awesome_weather_error( $forecast_get->get_error_message()  ); 
+		}
+		
 		$weather_data['forecast'] 	= json_decode( $forecast_get['body'] );
 		set_transient( $weather_transient_name, $weather_data, apply_filters( 'awesome_weather_cache', 3600 ) ); // CACHE FOR AN HOUR
 	}
