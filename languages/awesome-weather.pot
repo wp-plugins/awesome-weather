@@ -1,0 +1,174 @@
+# Copyright (C) 2013 Awesome Weather Widget
+# This file is distributed under the same license as the Awesome Weather Widget package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Awesome Weather Widget 1.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/awesome-weather\n"
+"POT-Creation-Date: 2013-07-23 18:07:09+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-07-23 13:08-0600\n"
+"Last-Translator: Hal Gatewood <hal@halgatewood.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: awesome-weather.php:64
+msgid "C"
+msgstr ""
+
+#: awesome-weather.php:64
+msgid "F"
+msgstr ""
+
+#: awesome-weather.php:205
+msgid "N"
+msgstr ""
+
+#: awesome-weather.php:206
+msgid "NNE"
+msgstr ""
+
+#: awesome-weather.php:207
+msgid "NE"
+msgstr ""
+
+#: awesome-weather.php:208
+msgid "ENE"
+msgstr ""
+
+#: awesome-weather.php:209
+msgid "E"
+msgstr ""
+
+#: awesome-weather.php:210
+msgid "ESE"
+msgstr ""
+
+#: awesome-weather.php:211
+msgid "SE"
+msgstr ""
+
+#: awesome-weather.php:212
+msgid "SSE"
+msgstr ""
+
+#: awesome-weather.php:213
+msgid "S"
+msgstr ""
+
+#: awesome-weather.php:214
+msgid "SSW"
+msgstr ""
+
+#: awesome-weather.php:215
+msgid "SW"
+msgstr ""
+
+#: awesome-weather.php:216
+msgid "WSW"
+msgstr ""
+
+#: awesome-weather.php:217
+msgid "W"
+msgstr ""
+
+#: awesome-weather.php:218
+msgid "WNW"
+msgstr ""
+
+#: awesome-weather.php:219
+msgid "NW"
+msgstr ""
+
+#: awesome-weather.php:220
+msgid "NNW"
+msgstr ""
+
+#: awesome-weather.php:252
+msgid "km/h"
+msgstr ""
+
+#: awesome-weather.php:252
+msgid "mph"
+msgstr ""
+
+#: awesome-weather.php:259
+msgid "humidity:"
+msgstr ""
+
+#: awesome-weather.php:260
+msgid "wind:"
+msgstr ""
+
+#: awesome-weather.php:261
+msgid "H"
+msgstr ""
+
+#: awesome-weather.php:261
+msgid "L"
+msgstr ""
+
+#: awesome-weather.php:294
+msgid "extended forecast"
+msgstr ""
+
+#: awesome-weather.php:316
+msgid "No weather information available"
+msgstr ""
+
+#: awesome-weather.php:374
+msgid "Location:"
+msgstr ""
+
+#: awesome-weather.php:375
+msgid "(i.e: London,UK or New York City,NY)"
+msgstr ""
+
+#: awesome-weather.php:381
+msgid "Override Title:"
+msgstr ""
+
+#: awesome-weather.php:386
+msgid "Units:"
+msgstr ""
+
+#: awesome-weather.php:392
+msgid "Size:"
+msgstr ""
+
+#: awesome-weather.php:401
+msgid "Forecast:"
+msgstr ""
+
+#: awesome-weather.php:413
+msgid "Background Image:"
+msgstr ""
+
+#: awesome-weather.php:418
+msgid "Hide Stats:"
+msgstr ""
+
+#: awesome-weather.php:423
+msgid "Link to OpenWeatherMap:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Awesome Weather Widget"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://halgatewood.com/awesome-weather"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A weather widget that actually looks cool"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Hal Gatewood"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.halgatewood.com"
+msgstr ""
+
