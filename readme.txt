@@ -48,6 +48,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.3 =
+Upgraded to most recent OpenWeatherMap APIS and included translation files.
+
 = 1.2.6 =
 Improved error handling with API calls
 
@@ -76,6 +79,12 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.3 =
+* Upgraded to most recent OpenWeatherMap APIS
+* Ready for translations
+* Current Locales available from OpenWeatherMap: 
+* English - en, Russian - ru, Italian - it, Spanish - sp, Ukrainian - ua, German - de, Portuguese - pt, Romanian - ro, Polish - pl, Finnish - fi, Dutch - nl, French - fr, Bulgarian - bg, Swedish - se, Chinese Traditional - zh_tw, Chinese Simplified - zh_cn, Turkish - tr 
 
 = 1.2.6 =
 * Improved error handling with API calls
