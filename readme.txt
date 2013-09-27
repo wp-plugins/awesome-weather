@@ -27,6 +27,8 @@ Settings:
 *   Forecast Days: How many days to show in the forecast bar
 *   Hide stats: Hide the text stats like humidity, wind, high and lows, etc
 *   Background: URL to an image that will be used as the background of the entire widget
+*   Custom Background Color: Add a hex color to override the default colors
+*   Inline Styles: Add inline styles to your widget to float around text and whatever else
 
 All weather data is provided by http://openweathermap.org and is cached for one hour.
 
