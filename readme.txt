@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: halgatewood
 Donate link: http://halgatewood.com/awesome-weather/
-Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global
+Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global, temp
 Requires at least: 3.5
 Tested up to: 3.6
 Stable tag: trunk
@@ -16,7 +16,7 @@ This plugin allows you to easily add super clean weather widgets to your site. T
 
 Use the built in widget or add it somewhere else with this shortcode: (all settings shown)
 
-`[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days=2 hide_stats=true background=http://urltoanimage.jpg]`
+`[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days="2" hide_stats=1 background="http://urltoanimage.jpg" custom_bg_color="#cccccc" inline_style="width: 200px; margin: 20px; float: left;"]`
 
 Settings:
 
@@ -45,8 +45,15 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 3. Micro no features
 4. Widget Settings
 5. Background Image Option (1.2)
+5. Add inline styles to your widget and set custom background colors (1.3.1)
 
 == Upgrade Notice ==
+
+= 1.3.1 = 
+Added setting for color override
+Added URL param to clear transient cache '?clear_awesome_widget'
+Added new translations for the days of the week in the extended forecast
+Ability to add inline styles to the widget shortcode
 
 = 1.3 =
 Upgraded to most recent OpenWeatherMap APIS and included translation files.
@@ -79,6 +86,13 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.3.1 = 
+* Added setting for color override
+* Added URL param to clear transient cache '?clear_awesome_widget'
+* Added new translations for the days of the week in the extended forecast
+* Improved caching support
+* Ability to add inline styles to the widget shortcode
 
 = 1.3 =
 * Upgraded to most recent OpenWeatherMap APIS
