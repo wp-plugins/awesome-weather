@@ -32,6 +32,9 @@ Settings:
 
 All weather data is provided by http://openweathermap.org and is cached for one hour.
 
+Translations:
+Portuguese - alvarogois
+
 
 == Installation ==
 
