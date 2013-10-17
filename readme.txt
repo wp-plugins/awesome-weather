@@ -18,7 +18,7 @@ Use the built in widget or add it somewhere else with this shortcode: (all setti
 
 `[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days="2" hide_stats=1 background="http://urltoanimage.jpg" custom_bg_color="#cccccc" inline_style="width: 200px; margin: 20px; float: left;"]`
 
-Settings:
+= Settings =
 
 *   Location: Enter like Montreal, CA or just Montreal. You may need to try different variations to get the right city
 *   Units: F (default) or C
@@ -32,7 +32,7 @@ Settings:
 
 All weather data is provided by http://openweathermap.org and is cached for one hour.
 
-Translations:
+= Translations =
 Portuguese - alvarogois
 
 
