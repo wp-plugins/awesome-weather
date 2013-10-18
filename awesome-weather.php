@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.3.1
+Version: 1.3.2
 
 
 FILTERS AVAILABLE:
@@ -367,6 +367,7 @@ class AwesomeWeatherWidget extends WP_Widget
         $custom_bg_color	= isset($instance['custom_bg_color']) ? $instance['custom_bg_color'] : false;
 
 		echo $before_widget;
+		echo $before_title . $after_title;
 		echo awesome_weather_logic( array( 'location' => $location, 'override_title' => $override_title, 'size' => $size, 'units' => $units, 'forecast_days' => $forecast_days, 'hide_stats' => $hide_stats, 'show_link' => $show_link, 'background' => $background, 'custom_bg_color' => $custom_bg_color ));
 		echo $after_widget;
     }

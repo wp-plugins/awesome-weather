@@ -54,6 +54,9 @@ Portuguese - alvarogois
 
 == Upgrade Notice ==
 
+= 1.3.2 =
+Improved support for poorly coded themes that load the before_title and after_title with extra divs and don't take into account that widgets may not use a title. 
+
 = 1.3.1 = 
 Added setting for color override
 Added URL param to clear transient cache '?clear_awesome_widget'
@@ -91,6 +94,10 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.3.2 =
+* Improved support for poorly coded themes that load the before_title and after_title with extra divs and don't take into account that widgets may not use a title. 
+* Portuguese translation created by user: alvarogois
 
 = 1.3.1 = 
 * Added setting for color override

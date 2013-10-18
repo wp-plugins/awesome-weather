@@ -104,6 +104,9 @@
 #sidebar .awe_wide .awesome-weather-todays-stats,
 #secondary .awe_wide .awesome-weather-todays-stats { font-size: 12px; }
 
+.widget.widget_awesomeweatherwidget h2,
+.widget.widget_awesomeweatherwidget h3,
+.widget.widget_awesomeweatherwidget .widget-title { display: none; }
 
 .awesome-weather-more-weather-link { padding: 5px; text-align: center; }
 .awesome-weather-more-weather-link a { color: #fff !important; text-decoration: none !important; font-size: 0.8em; }
