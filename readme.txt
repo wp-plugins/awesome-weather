@@ -33,8 +33,8 @@ Use the built in widget or add it somewhere else with this shortcode: (all setti
 All weather data is provided by http://openweathermap.org and is cached for one hour.
 
 = Translations =
-Portuguese - alvarogois
-German - Anne Bremer
+* Portuguese - alvarogois
+* German - Anne Bremer
 
 
 == Installation ==
