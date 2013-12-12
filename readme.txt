@@ -3,7 +3,7 @@ Contributors: halgatewood
 Donate link: http://halgatewood.com/awesome-weather/
 Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global, temp
 Requires at least: 3.5
-Tested up to: 3.6
+Tested up to: 3.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -55,6 +55,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.3.3 =
+Moved Google Font out of CSS into enqueue
+
 = 1.3.2 =
 Improved support for poorly coded themes that load the before_title and after_title with extra divs and don't take into account that widgets may not use a title. 
 
@@ -95,6 +98,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.3.3 =
+Moved Google Font out of CSS into enqueue
 
 = 1.3.2 =
 * Improved support for poorly coded themes that load the before_title and after_title with extra divs and don't take into account that widgets may not use a title. 

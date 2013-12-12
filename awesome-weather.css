@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-
 .awecf:before, .awecf:after { content: " "; display: table; }
 .awecf:after { clear: both; }
 .awecf { *zoom: 1; }

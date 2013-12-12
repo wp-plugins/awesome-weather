@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.3.2
+Version: 1.3.3
 
 
 FILTERS AVAILABLE:
@@ -44,6 +44,7 @@ add_action('plugins_loaded', 'awesome_weather_setup', 99999);
 function awesome_weather_wp_head( $posts ) 
 {
 	wp_enqueue_style( 'awesome-weather', plugins_url( '/awesome-weather.css', __FILE__ ) );
+	wp_enqueue_style( 'opensans-googlefont', 'https://fonts.googleapis.com/css?family=Open+Sans:400,300' );
 }
 add_action('wp_enqueue_scripts', 'awesome_weather_wp_head');
 
