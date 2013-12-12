@@ -48,7 +48,7 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 1. Basic wide layout
 2. Basic tall layout
-3. Micro no features
+3. Micro, using the checkbox 'Hide Stats'
 4. Widget Settings
 5. Background Image Option (1.2)
 5. Add inline styles to your widget and set custom background colors (1.3.1)
