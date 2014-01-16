@@ -35,6 +35,7 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 = Translations =
 * Portuguese - alvarogois
 * German - Anne Bremer
+* Polish - Femcio
 
 
 == Installation ==
