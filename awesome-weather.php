@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.3.3
+Version: 1.3.4
 
 
 FILTERS AVAILABLE:
@@ -127,7 +127,7 @@ function awesome_weather_logic( $atts )
 		$weather_data['forecast'] = array();
 		
 		// NOW
-		$now_ping = "http://api.openweathermap.org/data/2.5/weather?q=" . $city_name_slug . "&lang=" . $locale . "&units=" . $units;
+		$now_ping = "http://api.openweathermap.org/data/2.5/weather?q=" . $location . "&lang=" . $locale . "&units=" . $units;
 		$now_ping_get = wp_remote_get( $now_ping );
 	
 		if( is_wp_error( $now_ping_get ) ) 
@@ -150,7 +150,7 @@ function awesome_weather_logic( $atts )
 		// FORECAST
 		if( $days_to_show != "hide" )
 		{
-			$forecast_ping = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" . $city_name_slug . "&lang=" . $locale . "&units=" . $units ."&cnt=7";
+			$forecast_ping = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" . $location . "&lang=" . $locale . "&units=" . $units ."&cnt=7";
 			$forecast_ping_get = wp_remote_get( $forecast_ping );
 		
 			if( is_wp_error( $forecast_ping_get ) ) 

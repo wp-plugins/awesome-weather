@@ -56,6 +56,9 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 == Upgrade Notice ==
 
+= 1.3.4 =
+Fixed issue with Location stripping spaces from text cause weather to not get accessed. Thanks @storkontheroof!
+
 = 1.3.3 =
 Moved Google Font out of CSS into enqueue
 
@@ -99,6 +102,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.3.4 =
+Fixed issue with Location stripping spaces from text cause weather to not get accessed. Thanks @storkontheroof!
 
 = 1.3.3 =
 Moved Google Font out of CSS into enqueue
