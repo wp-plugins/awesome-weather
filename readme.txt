@@ -14,7 +14,7 @@ Finally beautiful weather widgets for your site.
 
 This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermaps.org.
 
-Use the built in widget with all of it's marvelous settings or add it to a page or theme with the shortcode: (all settings shown)
+Use the built in widget with all of its marvelous settings or add it to a page or theme with the shortcode: (all settings shown)
 
 `[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days="2" hide_stats=1 background="http://urltoanimage.jpg" custom_bg_color="#cccccc" inline_style="width: 200px; margin: 20px; float: left;"]`
 
