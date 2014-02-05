@@ -12,9 +12,9 @@ Finally beautiful weather widgets for your site.
 
 == Description ==
 
-This plugin allows you to easily add super clean weather widgets to your site. The design is based off the site: http://weatherrr.net/ and the widget changes colors based on the current temp.
+This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermaps.org.
 
-Use the built in widget or add it somewhere else with this shortcode: (all settings shown)
+Use the built in widget with all of it's marvelous settings or add it to a page or theme with the shortcode: (all settings shown)
 
 `[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days="2" hide_stats=1 background="http://urltoanimage.jpg" custom_bg_color="#cccccc" inline_style="width: 200px; margin: 20px; float: left;"]`
 
@@ -28,7 +28,7 @@ Use the built in widget or add it somewhere else with this shortcode: (all setti
 *   Hide stats: Hide the text stats like humidity, wind, high and lows, etc
 *   Background: URL to an image that will be used as the background of the entire widget
 *   Custom Background Color: Add a hex color to override the default colors
-*   Inline Styles: Add inline styles to your widget to float around text and whatever else
+*   Inline Styles: Add inline CSS styles to your widget to float around text and whatever else
 
 All weather data is provided by http://openweathermap.org and is cached for one hour.
 
@@ -42,7 +42,7 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 
 1. Add plugin to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Use shortcode or widget
+1. Use shortcode or widget to display awesome weather on your awesome site
 
 
 == Screenshots ==
@@ -55,6 +55,22 @@ All weather data is provided by http://openweathermap.org and is cached for one 
 5. Add inline styles to your widget and set custom background colors (1.3.1)
 
 == Upgrade Notice ==
+
+= 1.4 =
+
+Gearing up for the PRO version coming soon which will include: 
+* weather icons
+* custom layouts
+* shortcode generator
+* C/F switching
+* User location detection
+
+This release includes:
+* Extended forecast now uses WP current_time to determine what days to show, uses Timezone in 'Settings' -> 'General'
+* Added a Widget Title field that uses the standard widget code from the sidebar (optional)
+* Support for OpenWeatherMaps City ID, just insert in the Location field.
+* Support for rgba() in the Custom Background Color
+
 
 = 1.3.4 =
 Fixed issue with Location stripping spaces from text cause weather to not get accessed. Thanks @storkontheroof!
@@ -102,6 +118,17 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.4 =
+* Extended forecast now uses WP current_time to determine what days to show, setting in 'Settings' -> 'General'
+* Added a Widget Title field that uses the standard widget code from the sidebar (optional)
+* Fixed bottom margin issue for Firefox
+* Minor CSS tweaks
+* Support for OpenWeatherMaps City ID, just insert in the Location field.
+* Support for rgba() in the Custom Background Color
+* Changed default cached time from 1 hour to 3 hours
+* Cleaned up two PHP notices in admin
+
 
 = 1.3.4 =
 Fixed issue with Location stripping spaces from text cause weather to not get accessed. Thanks @storkontheroof!
