@@ -30,8 +30,6 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 *   Custom Background Color: Add a hex color to override the default colors
 *   Inline Styles: Add inline CSS styles to your widget to float around text and whatever else
 
-All weather data is provided by http://openweathermap.org and is cached for one hour.
-
 = Translations =
 * Portuguese - alvarogois
 * German - Anne Bremer
