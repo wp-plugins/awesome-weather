@@ -14,7 +14,7 @@ Finally beautiful weather widgets for your site.
 
 [Pro Version](http://halgatewood.com/downloads/awesome-weather-widget-pro/) coming soon! Icons, User Detection and more!
 
-This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermaps.org.
+This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermap.org
 
 Use the built in widget with all of its marvelous settings or add it to a page or theme with the shortcode: (all settings shown)
 
