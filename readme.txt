@@ -12,7 +12,7 @@ Finally beautiful weather widgets for your site.
 
 == Description ==
 
-[Pro Version](http://halgatewood.com/downloads/awesome-weather-widget-pro/) coming soon! Icons, User Detection and more!
+[Pro Version](http://halgatewood.com/downloads/awesome-weather-widget-pro/) available too! Icons, 3 New Layouts, Weather by Yahoo!, User Detection and more!
 
 This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermap.org
 
