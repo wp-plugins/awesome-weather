@@ -36,6 +36,7 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * Portuguese - alvarogois
 * German - Anne Bremer
 * Polish - Femcio
+* Dutch - Marco Rooze
 
 
 == Installation ==
