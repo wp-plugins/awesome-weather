@@ -37,6 +37,7 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * German - Anne Bremer
 * Polish - Femcio
 * Dutch - Marco Rooze
+* Swedish - AJ
 
 
 == Installation ==
