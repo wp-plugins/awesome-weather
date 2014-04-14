@@ -38,6 +38,8 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * Polish - Femcio
 * Dutch - Marco Rooze
 * Swedish - AJ
+* French - Gilles D.
+* Italian - Cesare C.
 
 
 == Installation ==
