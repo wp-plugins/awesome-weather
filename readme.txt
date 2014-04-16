@@ -3,7 +3,7 @@ Contributors: halgatewood
 Donate link: http://halgatewood.com/awesome-weather/
 Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global, temp
 Requires at least: 3.5
-Tested up to: 3.8
+Tested up to: 3.9
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -59,6 +59,10 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 5. Add inline styles to your widget and set custom background colors (1.3.1)
 
 == Upgrade Notice ==
+
+= 1.4.1 =
+* New translations added.
+* Checked to be working with WordPress 3.9
 
 = 1.4 =
 
