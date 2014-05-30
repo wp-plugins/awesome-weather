@@ -5,7 +5,7 @@ Plugin URI: http://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: http://www.halgatewood.com
-Version: 1.4
+Version: 1.4.1
 
 
 FILTERS AVAILABLE:
@@ -108,7 +108,7 @@ function awesome_weather_logic( $atts )
 	
 	
 	// TRANSIENT NAME
-	$weather_transient_name 		= 'awesome-weather-' . $units . '-' . $city_name_slug . "-". $locale;
+	$weather_transient_name 		= 'awe_' . $city_name_slug . "_" . strtolower($units_display) . '_' . $locale;
 
 
 	// TWO APIS USED (VERSION 2.5)
@@ -392,6 +392,8 @@ class AwesomeWeatherWidget extends WP_Widget
 		$instance['forecast_days'] 		= strip_tags($new_instance['forecast_days']);
 		$instance['background'] 		= strip_tags($new_instance['background']);
 		$instance['custom_bg_color'] 	= strip_tags($new_instance['custom_bg_color']);
+		$instance['hide_stats'] 		= (isset($new_instance['hide_stats']) AND $new_instance['hide_stats'] == 1) ? 1 : 0;
+		$instance['show_link'] 			= (isset($new_instance['show_link']) AND $new_instance['show_link'] == 1) ? 1 : 0;
         return $instance;
     }
  

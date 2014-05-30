@@ -40,7 +40,9 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * Swedish - AJ
 * French - Gilles D.
 * Italian - Cesare C.
-
+* Russian - Alex
+* Spanish - Joaquín B
+* Greek - John T
 
 == Installation ==
 
@@ -62,6 +64,8 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 
 = 1.4.1 =
 * New translations added.
+* Caching fixes
+* Fixed checkboxes in widget settings
 * Checked to be working with WordPress 3.9
 
 = 1.4 =
@@ -126,6 +130,12 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.4.1 =
+* New translations added.
+* Caching fixes
+* Fixed checkboxes in widget settings
+* Checked to be working with WordPress 3.9
 
 = 1.4 =
 * Extended forecast now uses WP current_time to determine what days to show, setting in 'Settings' -> 'General'
