@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: halgatewood
-Donate link: http://halgatewood.com/donate/
+Donate link: http://halgatewood.com/awesome-weather/
 Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global, temp
 Requires at least: 3.5
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,11 +12,9 @@ Finally beautiful weather widgets for your site.
 
 == Description ==
 
-[Pro Version](http://halgatewood.com/downloads/awesome-weather-widget-pro/) available. Icons, 3 New Layouts, Weather by Yahoo!, User Detection and more!
+This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermaps.org.
 
-This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermap.org
-
-Use the built in widget with all of its marvelous settings or add it to a page or theme with the shortcode: (all settings shown)
+Use the built in widget with all of it's marvelous settings or add it to a page or theme with the shortcode: (all settings shown)
 
 `[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days="2" hide_stats=1 background="http://urltoanimage.jpg" custom_bg_color="#cccccc" inline_style="width: 200px; margin: 20px; float: left;"]`
 
@@ -32,17 +30,13 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 *   Custom Background Color: Add a hex color to override the default colors
 *   Inline Styles: Add inline CSS styles to your widget to float around text and whatever else
 
+All weather data is provided by http://openweathermap.org and is cached for one hour.
+
 = Translations =
 * Portuguese - alvarogois
 * German - Anne Bremer
 * Polish - Femcio
-* Dutch - Marco Rooze
-* Swedish - AJ
-* French - Gilles D.
-* Italian - Cesare C.
-* Russian - Alex
-* Spanish - Joaquín B
-* Greek - John T
+
 
 == Installation ==
 
@@ -62,11 +56,8 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 
 == Upgrade Notice ==
 
-= 1.4.1 =
-* New translations added.
-* Caching fixes
-* Fixed checkboxes in widget settings
-* Checked to be working with WordPress 3.9
+= 1.4.2 =
+Slightly modified the CSS to include box-sizing. This may slightly modify the look of your widget, hopefully in a cleaner way.
 
 = 1.4 =
 
@@ -131,11 +122,8 @@ Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
 
-= 1.4.1 =
-* New translations added.
-* Caching fixes
-* Fixed checkboxes in widget settings
-* Checked to be working with WordPress 3.9
+= 1.4.2 =
+Added box-sizing: border-box to hopefully clean up the widget in many themes.
 
 = 1.4 =
 * Extended forecast now uses WP current_time to determine what days to show, setting in 'Settings' -> 'General'
