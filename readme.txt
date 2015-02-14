@@ -134,6 +134,9 @@ Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
 
+= 1.4.3.1 =
+More languages correctly supported from the OpenWeatherMap API
+
 = 1.4.3 =
 * Fixed spanish translations for weather description
 * Transient bug for languages also

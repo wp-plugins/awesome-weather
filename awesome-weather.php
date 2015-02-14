@@ -5,7 +5,7 @@ Plugin URI: https://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: https://www.halgatewood.com
-Version: 1.4.3
+Version: 1.4.3.1
 Text Domain: text-blocks
 Domain Path: /languages
 
@@ -76,7 +76,7 @@ function awesome_weather_logic( $atts )
 	$locale				= 'en';
 
 	$sytem_locale = get_locale();
-	$available_locales = array( 'en', 'es', 'sp', 'fr', 'it', 'de', 'pt', 'ro', 'pl', 'ru', 'ua', 'fi', 'nl', 'bg', 'se', 'tr', 'zh_tw', 'zh_cn' ); 
+	$available_locales = array( 'en', 'es', 'sp', 'fr', 'it', 'de', 'pt', 'ro', 'pl', 'ru', 'uk', 'ua', 'fi', 'nl', 'bg', 'sv', 'se', 'ca', 'tr', 'hr', 'zh', 'zh_tw', 'zh_cn' ); 
 	
 	
     // CHECK FOR LOCALE
