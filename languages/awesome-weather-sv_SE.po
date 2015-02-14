@@ -1,0 +1,216 @@
+# Copyright (C) 2014 Awesome Weather Widget
+# This file is distributed under the same license as the Awesome Weather Widget package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Awesome Weather Widget 1.4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/awesome-weather\n"
+"POT-Creation-Date: 2014-02-05 22:17:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-02-24 22:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: sv_SE\n"
+
+#: awesome-weather.php:66
+msgid "C"
+msgstr "C"
+
+#: awesome-weather.php:66
+msgid "F"
+msgstr "F"
+
+#: awesome-weather.php:236
+msgid "N"
+msgstr "N"
+
+#: awesome-weather.php:237
+msgid "NNE"
+msgstr "NNO"
+
+#: awesome-weather.php:238
+msgid "NE"
+msgstr "NO"
+
+#: awesome-weather.php:239
+msgid "ENE"
+msgstr "ONO"
+
+#: awesome-weather.php:240
+msgid "E"
+msgstr "O"
+
+#: awesome-weather.php:241
+msgid "ESE"
+msgstr "OSO"
+
+#: awesome-weather.php:242
+msgid "SE"
+msgstr "SO"
+
+#: awesome-weather.php:243
+msgid "SSE"
+msgstr "SSO"
+
+#: awesome-weather.php:244
+msgid "S"
+msgstr "S"
+
+#: awesome-weather.php:245
+msgid "SSW"
+msgstr "SSV"
+
+#: awesome-weather.php:246
+msgid "SW"
+msgstr "SV"
+
+#: awesome-weather.php:247
+msgid "WSW"
+msgstr "VSV"
+
+#: awesome-weather.php:248
+msgid "W"
+msgstr "V"
+
+#: awesome-weather.php:249
+msgid "WNW"
+msgstr "VNV"
+
+#: awesome-weather.php:250
+msgid "NW"
+msgstr "NV"
+
+#: awesome-weather.php:251
+msgid "NNW"
+msgstr "NNV"
+
+#: awesome-weather.php:288
+msgid "km/h"
+msgstr "km/h"
+
+#: awesome-weather.php:288
+msgid "mph"
+msgstr "mph"
+
+#: awesome-weather.php:295
+msgid "humidity:"
+msgstr "fuktighet"
+
+#: awesome-weather.php:296
+msgid "wind:"
+msgstr "vind"
+
+#: awesome-weather.php:297
+msgid "H"
+msgstr "H"
+
+#: awesome-weather.php:297
+msgid "L"
+msgstr "L"
+
+#: awesome-weather.php:313
+msgid "Sun"
+msgstr "Sön"
+
+#: awesome-weather.php:313
+msgid "Mon"
+msgstr "Mån"
+
+#: awesome-weather.php:313
+msgid "Tue"
+msgstr "Tis"
+
+#: awesome-weather.php:313
+msgid "Wed"
+msgstr "Ons"
+
+#: awesome-weather.php:313
+msgid "Thu"
+msgstr "Tors"
+
+#: awesome-weather.php:313
+msgid "Fri"
+msgstr "Fre"
+
+#: awesome-weather.php:313
+msgid "Sat"
+msgstr "Lör"
+
+#: awesome-weather.php:331
+msgid "extended forecast"
+msgstr "Utöka prognos"
+
+#: awesome-weather.php:352
+msgid "No weather information available"
+msgstr "Ingen väderinformations finns"
+
+#: awesome-weather.php:415
+msgid "Location:"
+msgstr "Plats:"
+
+#: awesome-weather.php:416
+msgid "(i.e: London,UK or New York City,NY)"
+msgstr "(t. ex.: London,UK or New York City,NY)"
+
+#: awesome-weather.php:422
+msgid "Override Title:"
+msgstr "Ignorera Titel:"
+
+#: awesome-weather.php:427
+msgid "Units:"
+msgstr "Enhet:"
+
+#: awesome-weather.php:433
+msgid "Size:"
+msgstr "Storlek:"
+
+#: awesome-weather.php:442
+msgid "Forecast:"
+msgstr "Prognos:"
+
+#: awesome-weather.php:454
+msgid "Background Image:"
+msgstr "Bakgrundsbild:"
+
+#: awesome-weather.php:459
+msgid "Custom Background Color:"
+msgstr "Egen Bakgrundsfärg:"
+
+#: awesome-weather.php:460
+msgid "overrides color changing"
+msgstr "ignorera färgändringar"
+
+#: awesome-weather.php:465
+msgid "Hide Stats:"
+msgstr "Göm statistik:"
+
+#: awesome-weather.php:470
+msgid "Link to OpenWeatherMap:"
+msgstr "Länk till OpenWeatherMap:"
+
+#: awesome-weather.php:475
+msgid "Widget Title: (optional)"
+msgstr "Widget Titel: (frivillig)"
+
+#. Plugin Name of the plugin/theme
+msgid "Awesome Weather Widget"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://halgatewood.com/awesome-weather"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A weather widget that actually looks cool"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Hal Gatewood"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.halgatewood.com"
+msgstr ""
