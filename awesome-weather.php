@@ -1,11 +1,13 @@
 <?php
 /*
 Plugin Name: Awesome Weather Widget
-Plugin URI: http://halgatewood.com/awesome-weather
+Plugin URI: https://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
-Author URI: http://www.halgatewood.com
-Version: 1.4.2
+Author URI: https://www.halgatewood.com
+Version: 1.4.3
+Text Domain: text-blocks
+Domain Path: /languages
 
 
 FILTERS AVAILABLE:
@@ -74,7 +76,7 @@ function awesome_weather_logic( $atts )
 	$locale				= 'en';
 
 	$sytem_locale = get_locale();
-	$available_locales = array( 'en', 'sp', 'fr', 'it', 'de', 'pt', 'ro', 'pl', 'ru', 'ua', 'fi', 'nl', 'bg', 'se', 'tr', 'zh_tw', 'zh_cn' ); 
+	$available_locales = array( 'en', 'es', 'sp', 'fr', 'it', 'de', 'pt', 'ro', 'pl', 'ru', 'ua', 'fi', 'nl', 'bg', 'se', 'tr', 'zh_tw', 'zh_cn' ); 
 	
 	
     // CHECK FOR LOCALE
@@ -108,7 +110,7 @@ function awesome_weather_logic( $atts )
 	
 	
 	// TRANSIENT NAME
-	$weather_transient_name 		= 'awe_' . $city_name_slug . "_" . strtolower($units_display) . '_' . $locale;
+	$weather_transient_name 		= 'awe_' . $city_name_slug . "_" . strtolower($units) . '_' . $locale;
 
 
 	// TWO APIS USED (VERSION 2.5)
