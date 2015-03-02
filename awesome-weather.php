@@ -5,8 +5,8 @@ Plugin URI: https://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: https://www.halgatewood.com
-Version: 1.4.3.1
-Text Domain: text-blocks
+Version: 1.4.3.2
+Text Domain: awesome-weather
 Domain Path: /languages
 
 

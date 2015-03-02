@@ -12,7 +12,7 @@ Finally beautiful weather widgets for your site.
 
 == Description ==
 
-[Pro Version](http://halgatewood.com/downloads/awesome-weather-widget-pro/) available. Icons, 3 New Layouts, Weather by Yahoo!, User Detection and more! 
+[Pro Version](http://halgatewood.com/downloads/awesome-weather-widget-pro/) available. Icons, 3 New Layouts, Weather by Yahoo!, User Detection and more!
 
 This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermap.org
 
@@ -41,8 +41,9 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * French - Gilles D.
 * Italian - Cesare C.
 * Russian - Alex
-* Spanish - Joaquín B
-* Greek - John T
+* Spanish - Joaquín B.
+* Greek - John T.
+* Finnish - Mikko A.
 
 == Installation ==
 
@@ -133,6 +134,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.4.3.2 =
+* Finnish language added (thanks Mikko Anttila)
 
 = 1.4.3.1 =
 More languages correctly supported from the OpenWeatherMap API
