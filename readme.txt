@@ -44,6 +44,7 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * Spanish - Joaquín B.
 * Greek - John T.
 * Finnish - Mikko A.
+* Hungarian - Istvan H.
 
 == Installation ==
 
@@ -134,6 +135,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.4.3.3 =
+* Hungarian language added (thanks Istvan Hidegkuti
 
 = 1.4.3.2 =
 * Finnish language added (thanks Mikko Anttila)
