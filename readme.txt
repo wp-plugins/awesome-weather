@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: halgatewood
-Donate link: http://halgatewood.com/donate/
+Donate link: https://cash.me/$HalGatewood
 Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global, temp
 Requires at least: 3.5
 Tested up to: 4.2
