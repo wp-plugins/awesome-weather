@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: halgatewood
 Donate link: https://cash.me/$HalGatewood
-Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global, temp
+Tags: widgets,sidebar,shortcode,openweathermap,weather,weather widget,forecast,global,temp,local weather,local forecast,forecast widget,weather forecasts,yahoo weather
 Requires at least: 3.5
 Tested up to: 4.2
 Stable tag: trunk
