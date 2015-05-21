@@ -63,6 +63,7 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 5. Background Image Option (1.2)
 6. Add inline styles to your widget and set custom background colors (1.3.1)
 7. Use different background images based on weather (1.5)
+8. Search for the City ID directly in the widget settings (1.5)
 
 == Upgrade Notice ==
 
