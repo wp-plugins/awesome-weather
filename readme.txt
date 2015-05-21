@@ -71,6 +71,7 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * We also added the ability to use different background images by weather. Also new CSS properties using the weather condition code and text are added so you can target based on weather type.
 * Added several new filters to modify aspects of the weather widget like changing the C and F to a Degree symbol.
 * Fixed an issue where changing the forecast days would not clear the cache.
+* Default cache is now 30 minutes
 
 = 1.4.2 =
 Slightly modified the CSS to include box-sizing. This may slightly modify the look of your widget, hopefully in a cleaner way.
@@ -149,6 +150,7 @@ Changed API endpoints. Might not find weather without update.
 * We also added the ability to use different background images by weather. Also new CSS properties using the weather condition code and text are added so you can target based on weather type.
 * Added several new filters to modify aspects of the weather widget like changing the C and F to a Degree symbol.
 * Fixed an issue where changing the forecast days would not clear the cache.
+* Default cache is now 30 minutes
 
 = 1.4.3.3 =
 * Hungarian language added (thanks Istvan Hidegkuti
