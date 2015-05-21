@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: halgatewood
-Donate link: https://cash.me/$HalGatewood
-Tags: widgets,sidebar,shortcode,openweathermap,weather,weather widget,forecast,global,temp,local weather,local forecast,forecast widget,weather forecasts,yahoo weather
+Donate link: http://halgatewood.com/donate/
+Tags: widgets, sidebar, shortcode, openweathermap, weather, weather widget, forecast, global, temp, local weather,local forecast
 Requires at least: 3.5
-Tested up to: 4.2
+Tested up to: 4.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,17 +12,17 @@ Finally beautiful weather widgets for your site.
 
 == Description ==
 
-[Pro Version](http://halgatewood.com/downloads/awesome-weather-widget-pro/) available. Icons, 3 New Layouts, Weather by Yahoo!, User Detection and more!
+[Pro Version](https://halgatewood.com/downloads/awesome-weather-widget-pro/) available. Icons, 3 New Layouts, Weather by Yahoo!, User Detection and more!
 
 This plugin allows you to easily add super clean (and awesome) weather widgets to your site. The weather data is provided for free by http://openweathermap.org
 
 Use the built in widget with all of its marvelous settings or add it to a page or theme with the shortcode: (all settings shown)
 
-`[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days="2" hide_stats=1 background="http://urltoanimage.jpg" custom_bg_color="#cccccc" inline_style="width: 200px; margin: 20px; float: left;"]`
+`[awesome-weather location="Montreal" units="F" size="tall" override_title="MTL" forecast_days="2" hide_stats="1" background="http://urltoanimage.jpg" custom_bg_color="#cccccc" inline_style="width: 200px; margin: 20px; float: left;" background_by_weather="1"]`
 
 = Settings =
 
-*   Location: Enter like Montreal, CA or just Montreal. You may need to try different variations to get the right city
+*   Location: Enter a string like ‘Montreal, CA’ or just ‘Montreal’. You can even get the City ID from OpenWeatherMap and use that.
 *   Units: F (default) or C
 *   Size: wide (default) or tall
 *   Override Title: Change the title in the header bar to whatever, sometimes it pulls weather from a close city
@@ -31,6 +31,7 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 *   Background: URL to an image that will be used as the background of the entire widget
 *   Custom Background Color: Add a hex color to override the default colors
 *   Inline Styles: Add inline CSS styles to your widget to float around text and whatever else
+*   Background Image Based on Weather (v1.5+): Set this to 1 if you want to use different images for different weather types, How to: https://halgatewood.com/awesome-weather-bgs
 
 = Translations =
 * Portuguese - alvarogois
@@ -60,9 +61,16 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 3. Micro, using the checkbox 'Hide Stats'
 4. Widget Settings
 5. Background Image Option (1.2)
-5. Add inline styles to your widget and set custom background colors (1.3.1)
+6. Add inline styles to your widget and set custom background colors (1.3.1)
+7. Use different background images based on weather (1.5)
 
 == Upgrade Notice ==
+
+= 1.5 =
+* You can now speed up your weather and provide better accuracy by using the new Search box in the widget to find the OpenWeatherMap City ID. 
+* We also added the ability to use different background images by weather. Also new CSS properties using the weather condition code and text are added so you can target based on weather type.
+* Added several new filters to modify aspects of the weather widget like changing the C and F to a Degree symbol.
+* Fixed an issue where changing the forecast days would not clear the cache.
 
 = 1.4.2 =
 Slightly modified the CSS to include box-sizing. This may slightly modify the look of your widget, hopefully in a cleaner way.
@@ -135,6 +143,12 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.5 =
+* You can now speed up your weather and provide better accuracy by using the new Search box in the widget to find the OpenWeatherMap City ID. 
+* We also added the ability to use different background images by weather. Also new CSS properties using the weather condition code and text are added so you can target based on weather type.
+* Added several new filters to modify aspects of the weather widget like changing the C and F to a Degree symbol.
+* Fixed an issue where changing the forecast days would not clear the cache.
 
 = 1.4.3.3 =
 * Hungarian language added (thanks Istvan Hidegkuti
