@@ -5,7 +5,7 @@ Plugin URI: https://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: https://www.halgatewood.com
-Version: 1.5
+Version: 1.5.1
 Text Domain: awesome-weather
 Domain Path: /languages
 
@@ -235,7 +235,7 @@ function awesome_weather_logic( $atts )
 	{
 		if( substr(trim($custom_bg_color), 0, 1) != "#" AND substr(trim(strtolower($custom_bg_color)), 0, 3) != "rgb" ) { $custom_bg_color = "#" . $custom_bg_color; }
 		$inline_style .= "background-color: {$custom_bg_color};";
-		$background_classes[] = "custom";
+		$background_classes[] = "awe_custom";
 	}
 	else
 	{

@@ -67,6 +67,9 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 
 == Upgrade Notice ==
 
+= 1.5.1 =
+* Changed .custom class to .awe_custom
+
 = 1.5 =
 * You can now speed up your weather and provide better accuracy by using the new Search box in the widget to find the OpenWeatherMap City ID. 
 * We also added the ability to use different background images by weather. Also new CSS properties using the weather condition code and text are added so you can target based on weather type.
@@ -145,6 +148,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.5.1 =
+* Changed .custom class to .awe_custom
 
 = 1.5 =
 * You can now speed up your weather and provide better accuracy by using the new Search box in the widget to find the OpenWeatherMap City ID. 
