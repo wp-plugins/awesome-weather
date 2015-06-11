@@ -46,6 +46,10 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * Greek - John T.
 * Finnish - Mikko A.
 * Hungarian - Istvan H.
+* Arabic - Fouad Y.
+* Croatian - Vinko P.
+* Nederlands - Schoene H.
+* Turkish - Saban K.
 
 == Installation ==
 
