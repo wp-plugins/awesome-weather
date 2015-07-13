@@ -46,6 +46,10 @@ Use the built in widget with all of its marvelous settings or add it to a page o
 * Greek - John T.
 * Finnish - Mikko A.
 * Hungarian - Istvan H.
+* Arabic - Fouad Y.
+* Croatian - Vinko P.
+* Nederlands - Schoene H.
+* Turkish - Saban K.
 
 == Installation ==
 
@@ -148,6 +152,9 @@ Removed debugging code, sorry!
 Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
+
+= 1.5.2 =
+* Updated WP_Widget construct to prevent future breaking.
 
 = 1.5.1 =
 * Changed .custom class to .awe_custom

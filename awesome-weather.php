@@ -5,7 +5,7 @@ Plugin URI: https://halgatewood.com/awesome-weather
 Description: A weather widget that actually looks cool
 Author: Hal Gatewood
 Author URI: https://www.halgatewood.com
-Version: 1.5.1
+Version: 1.5.2
 Text Domain: awesome-weather
 Domain Path: /languages
 
@@ -88,7 +88,7 @@ function awesome_weather_logic( $atts )
 	$locale						= 'en';
 
 	$sytem_locale = get_locale();
-	$available_locales = array( 'en', 'es', 'sp', 'fr', 'it', 'de', 'pt', 'ro', 'pl', 'ru', 'uk', 'ua', 'fi', 'nl', 'bg', 'sv', 'se', 'ca', 'tr', 'hr', 'zh', 'zh_tw', 'zh_cn' ); 
+	$available_locales = array( 'en', 'es', 'sp', 'fr', 'it', 'de', 'pt', 'ro', 'pl', 'ru', 'uk', 'ua', 'fi', 'nl', 'bg', 'sv', 'se', 'ca', 'tr', 'hr', 'zh', 'zh_tw', 'zh_cn', 'hu' ); 
 	
 	
     // CHECK FOR LOCALE
@@ -478,7 +478,7 @@ add_action( 'admin_enqueue_scripts', 'awesome_weather_admin_scripts' );
 // AWESOME WEATHER WIDGET, WIDGET CLASS, SO MANY WIDGETS
 class AwesomeWeatherWidget extends WP_Widget 
 {
-	function AwesomeWeatherWidget() { parent::WP_Widget(false, $name = 'Awesome Weather Widget'); }
+	function AwesomeWeatherWidget() { parent::__construct(false, $name = 'Awesome Weather Widget'); }
 
     function widget($args, $instance) 
     {	
