@@ -153,6 +153,9 @@ Changed API endpoints. Might not find weather without update.
 
 == Changelog ==
 
+= 1.5.2 =
+* Updated WP_Widget construct to prevent future breaking.
+
 = 1.5.1 =
 * Changed .custom class to .awe_custom
 
