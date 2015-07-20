@@ -88,7 +88,7 @@ msgstr "ССЗ"
 
 #: awesome-weather.php:288
 msgid "km/h"
-msgstr "км.ч"
+msgstr "км/ч"
 
 #: awesome-weather.php:288
 msgid "mph"
@@ -112,31 +112,31 @@ msgstr "Д"
 
 #: awesome-weather.php:313
 msgid "Sun"
-msgstr "Вск"
+msgstr "Вс"
 
 #: awesome-weather.php:313
 msgid "Mon"
-msgstr "Пон"
+msgstr "Пн"
 
 #: awesome-weather.php:313
 msgid "Tue"
-msgstr "Втр"
+msgstr "Вт"
 
 #: awesome-weather.php:313
 msgid "Wed"
-msgstr "Срд"
+msgstr "Ср"
 
 #: awesome-weather.php:313
 msgid "Thu"
-msgstr "Чтв"
+msgstr "Чт"
 
 #: awesome-weather.php:313
 msgid "Fri"
-msgstr "Птн"
+msgstr "Пт"
 
 #: awesome-weather.php:313
 msgid "Sat"
-msgstr "Сбб"
+msgstr "Сб"
 
 #: awesome-weather.php:331
 msgid "extended forecast"
@@ -152,7 +152,7 @@ msgstr "Место:"
 
 #: awesome-weather.php:416
 msgid "(i.e: London,UK or New York City,NY)"
-msgstr "(нап: London,UK or New York City,NY)"
+msgstr "(Например: London,UK or New York City,NY)"
 
 #: awesome-weather.php:422
 msgid "Override Title:"
@@ -176,7 +176,7 @@ msgstr "Фоновое изображение:"
 
 #: awesome-weather.php:459
 msgid "Custom Background Color:"
-msgstr "Свой цвет фона:"
+msgstr "Цвет фона:"
 
 #: awesome-weather.php:460
 msgid "overrides color changing"
@@ -188,7 +188,7 @@ msgstr "Скрыть статистику:"
 
 #: awesome-weather.php:470
 msgid "Link to OpenWeatherMap:"
-msgstr "Линк на OpenWeatherMap:"
+msgstr "Ссылка на OpenWeatherMap:"
 
 #: awesome-weather.php:475
 msgid "Widget Title: (optional)"
@@ -204,7 +204,7 @@ msgstr "http://halgatewood.com/awesome-weather"
 
 #. Description of the plugin/theme
 msgid "A weather widget that actually looks cool"
-msgstr "A weather widget that actually looks cool"
+msgstr "Виджет погоды, который поистине выглядит круто"
 
 #. Author of the plugin/theme
 msgid "Hal Gatewood"
